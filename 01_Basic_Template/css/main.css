@@ -1,3 +1,7 @@
+/* Global Styles */
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+}
 a {
     color: black;
     text-decoration: none;
@@ -11,48 +15,90 @@ li {
     display: inline-block;
 }
 
+#wrapper {
+    max-width: 1100px;
+    width: 100%;
+    margin: 0 auto;
+}
+
 #header {
     text-align: center;
     padding: 60px 0;
 }
 #header a {
     font-size: 40px;
+    font-weight: bold;
+    color: white;
+}
+#nav {
+    overflow: hidden;
+    background: #555;
 }
 #nav ul.menus {
     float: left;
 }
+#nav ul.menus li {
+    padding: 20px;
+}
+#nav ul.menus li a {
+    color: white;
+}
+#nav ul.menus li.active {
+    background: white;
+}
+#nav ul.menus li.active a {
+    color: black;
+}
 #nav ul.icons {
     float: right;
 }
+#nav ul.icons li {
+    padding: 20px;
+}
+#nav ul.icons li a {
+    color: white;
+}
+#main .featured {
+    background: white;
+    padding: 40px;
+}
 #main .featured header h2 {
     text-align: center;
-    padding: 50px 40px 0;
+    padding: 20px 0 40px;
+    font-size: 30px;
 }
 #main .featured header a img {
     width: 100%;
 }
+#main .featured p {
+    margin: 30px 0;
+}
 
 #footer {
+    background: #eeeeee;
     display: flex;
     /* 엘리먼트가 보여지는 모양을 플렉서블하게 바꿔주는 속성 */
 }
 #footer .contact, #footer .info {
     flex: 1;
     /* 둘다 1로 설정했으므로 1:1비율로 설정. 만약 하나는 2, 하나는 1로 설정하면 2:1 비율이 됨 */
+    padding: 30px;
 }
 #footer .contact .inputs {}
-#footer .contact .inputs label {}
+#footer .contact .inputs label {
+    font-weight: bold;
+}
 #footer .contact .inputs input {
     width: 100%;
     height: 60px;
-    border: solid 3px gray;
+    border: solid 1px #ccc;
     box-sizing: border-box;
     margin-bottom: 30px;
 }
 #footer .contact .inputs textarea {
     box-sizing: border-box;
     width: 100%;
-    border: solid 3px gray;
+    border: solid 1px #ccc;
     margin-bottom: 30px;
 }
 #footer .contact .submit input {
@@ -77,4 +123,16 @@ li {
     padding: 20px;
     text-align: center;
 }
-#copyright p {color:#ccc;}
+#copyright p, #copyright a {
+    color: #ccc;
+}
+.bg {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw; /* viewport width */
+    height: 100vh; /* viewport height */
+    background: url(../images/background.png) no-repeat fixed center;
+    z-index: -1;
+    opacity: .4;
+}
