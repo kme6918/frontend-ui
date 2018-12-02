@@ -1,11 +1,11 @@
 $(document).ready(function(){
     /* Control Panel */
-    $(window).resize(() => { //ES2016 최신 자바스크립트 기법 : 함수를 선언하는 모습을 축약. finction()역할인듯. 화살표함수라고 한다. () =>
+    /*$(window).resize(() => { //ES2016 최신 자바스크립트 기법 : 함수를 선언하는 모습을 축약. finction()역할인듯. 화살표함수라고 한다. () =>
         resizePanelPosition();
-    }); //윈도우(브라우저창)가 리사이즈 될 때를 감지해서 resizePanelPosition 함수를 실행시켜라.
-    /* $(window).resize(function(){
+    });*/ //윈도우(브라우저창)가 리사이즈 될 때를 감지해서 resizePanelPosition 함수를 실행시켜라.
+    $(window).resize(function(){
         resizePanelPosition();
-    });    테스트해볼것! */
+    });
 
     function resizePanelPosition(){
         // Control Panel Positioning
