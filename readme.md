@@ -13,11 +13,22 @@
 
 ````javascript
 $(document).ready(function(){
-    $("#slider).click(function(){
+    $("#slider").click(function(){
         console.log("Click");
     });
 });
 ````
+
+````html
+<h1>html 코드를 넣고싶을 때</h1>
+````
 마크다운 짱이네
 
-Typora : 마크다운 에디터
+Typora : 마크다운 전용 에디터
+
+## 링크사이트
+[구글](http://google.com)
+
+## 강조
+*HTML* **HTML** ***HTML***
+++CSS++ ::CSS:: 이건 확인해볼것
