@@ -32,3 +32,6 @@ Typora : 마크다운 전용 에디터
 ## 강조
 *HTML* **HTML** ***HTML***
 ++CSS++ ::CSS:: 이건 확인해볼것
+
+## 이미지 넣기
+![대체텍스트](/HT502-imageSlider_template/images/img01.jpg "이미지 제목")
